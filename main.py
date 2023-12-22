@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from transformers import GPT2Model, GPT2Config
 
 class TextEmbeddingModel(nn.Module):
     def __init__(self, vocab_size, num_layers_gpt=4, num_heads_gpt=32, n_ctx=2048, n_embd=768, num_layers_decoder=2, num_heads_decoder=32):
